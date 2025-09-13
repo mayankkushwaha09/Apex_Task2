@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 15px;
+  color: white;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li {
+  margin-left: 20px;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Layout with Grid */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input, form textarea, form button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+form button {
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background: #555;
+}
+
+/* To-Do List */
+#taskList {
+  margin-top: 15px;
+}
+#taskList li {
+  background: #ddd;
+  margin: 5px 0;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+#taskList button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#taskList button:hover {
+  background: darkred;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

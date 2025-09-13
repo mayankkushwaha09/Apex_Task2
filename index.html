@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <h2>Task 2</h2>
+    <ul class="nav-links">
+      <li><a href="#form">Contact</a></li>
+      <li><a href="#todo">To-Do List</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="container">
+    <!-- Contact Form Section -->
+    <section id="form" class="card">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section id="todo" class="card">
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter new task">
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
